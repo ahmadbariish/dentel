@@ -1,0 +1,9 @@
+const Reviw = require('../models/reviwModel');
+const AppError = require('../utils/appError');
+const handlerFactory = require('../utils/handlerFactory');
+const catchAsync = require('../utils/catchAsync');
+exports.getReviw = handlerFactory.getOne(Reviw);
+exports.createReviw = handlerFactory.createOne(Reviw);
+exports.updateReviw = handlerFactory.updateOne(Reviw);
+exports.deleteReviw = handlerFactory.deleteOne(Reviw);
+exports.getAllReviw = handlerFactory.getAll(Reviw);

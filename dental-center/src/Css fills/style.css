@@ -1,0 +1,329 @@
+
+
+#login-btn {
+  transition: 0.3s;
+}
+#login-btn:hover {
+  background-color: #4a90e2;
+}
+.logo {
+  width: 25px;
+  padding-right: 10px;
+}
+
+/* end navbar */
+/* start home page */
+.container-home {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container-home::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #4944442e;
+}
+
+.content-home {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+}
+
+/* Ens home page */
+
+/* start Sservices */
+.services-title {
+  color: #1a237e;
+  text-align: center;
+  padding: 30px 0px 10px 0px;
+  font-size: 45px;
+  font-weight: normal;
+  max-width: 100%;
+}
+.services-description {
+  text-align: center;
+  color: #777;
+}
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-img {
+  width: 100px;
+}
+.card-content {
+  text-align: center;
+}
+.service-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+@media (max-width: 992px) {
+  .services-title {
+    font-size: 26px;
+  }
+}
+/* End Sservices */
+/* start Doctors */
+.card-title {
+  color: #3956dd;
+  padding: 30px 0px 0px 0px;
+  font-size: 45px;
+  text-align: center;
+}
+
+.container-doctors {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.content-doctor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px;
+}
+.container-doctors .doctor-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  position: relative;
+}
+.container-doctors .doctor-img::after {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: red;
+}
+.description-doctor {
+  text-align: center;
+  max-width: 270px;
+}
+.container-doctors .title-doctor {
+  color: #3956dd;
+  padding: 15px 0px 0px;
+}
+.container-doctors p {
+  color: #757575;
+  line-height: 1.6;
+}
+/* End Doctors */
+
+/* start section home */
+.container-section {
+  height: calc(100vh - 64px);
+  position: relative;
+}
+
+.container-section img {
+  object-fit: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+.container-section .content-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 50px;
+}
+.container-section .content-section .info {
+  text-align: end;
+}
+.container-section .content-section .info h1 {
+  font-size: 70px;
+  font-weight: 600;
+}
+.container-section .content-section .info span {
+  color: #3956dd;
+}
+.container-section .content-section .box-section {
+  color: #777;
+}
+@media (max-width: 768px) {
+  .container-section .content-section .info h1 {
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+  }
+  .container-section img {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .container-section img {
+    display: none;
+  }
+  .container-section .content-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+  }
+}
+/* End section home */
+/* start About */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.btn-about {
+  padding: 10px 20px;
+  background-color: #2185d0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-about:hover {
+  background-color: #1678c2;
+}
+.about .image-about {
+  width: 500px;
+  height: 400px;
+  margin-top: 3rem;
+  border-radius: 20px;
+}
+.content-display {
+  width: 100%;
+  max-width: 700px;
+  min-height: 200px; /* يحافظ على الفراغ حتى لو ما في محتوى */
+}
+@media (max-width: 1024px) {
+  .about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .image-about {
+    margin: 0px;
+  }
+}
+@media (max-width: 600px) {
+  .image-about {
+    width: 400px;
+    height: 300px;
+    margin: 0px;
+    border-radius: 20px;
+  }
+}
+/* End About */
+/* start model */
+.modelBackground {
+  background-color: white;
+  position: relative;
+  z-index: 10;
+  width: 800px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.modelBackground .inputs .row-one {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 25px;
+}
+.modelBackground .inputs .row-one .input,
+.modelBackground .inputs .row-three .input {
+  display: flex;
+  align-items: end;
+}
+.row-tow {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+.row-three {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.icon {
+  margin: 10px 0px -4px 0px;
+  color: #1a237e;
+}
+.btn-model {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-model button {
+  border: none;
+  padding: 10px 15px;
+  color: #1a237e;
+  font-size: 20px;
+  border-radius: 36px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.btn-model button:hover {
+  color: white;
+  background-color: #1a237e;
+}
+.input select {
+  width: 200px;
+  border: none;
+  border-bottom: 1px solid #9e9e9e;
+}
+.input select:focus {
+  outline: none;
+}
+/* end model */
+/* start login  */
+.login-paper {
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  background-color: white;
+}
+.login-container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.08);
+  min-height: 100vh;
+}
+/* End  login  */
